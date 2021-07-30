@@ -28,8 +28,9 @@
     <main class="main">
       <section id="intro" class="intro-section">
         <h2 class="subtitle">>> Building Algorithms with <span>Humanity</span> in Mind</h2>
-        <!-- <div class="intro-content"> -->
-        <img class="profile-pic" src="https://media-exp1.licdn.com/dms/image/C5603AQGUIx9Qj0G4FQ/profile-displayphoto-shrink_200_200/0/1624814434756?e=1632960000&v=beta&t=ncMthgIScJfvmSU4I2QTk3KvHXa1e_vV_TOlCK-CEMk" alt="Xiao Zhong's profile picture">
+        <a href="https://www.linkedin.com/in/xiaozhong/" target="_blank">
+          <img class="profile-pic" src="https://media-exp1.licdn.com/dms/image/C5603AQGUIx9Qj0G4FQ/profile-displayphoto-shrink_200_200/0/1624814434756?e=1632960000&v=beta&t=ncMthgIScJfvmSU4I2QTk3KvHXa1e_vV_TOlCK-CEMk" alt="Xiao Zhong's profile picture">
+        </a> 
         <div class="intro-text">
           <p> I am a full-stack software engineer in training @Techtonica.</p>
           <p>As a former finance professional and researcher in corporte finance and innovation, I have witnessed first-hand that the bias embedded in bad profit-driven algorithms can cause unintentional 
@@ -38,7 +39,6 @@
             <p>I hope to leverage my experience in finance, non-profit, and academia to 
             help improve the functionality and user experience of the products I will be building in the future.</p>
         </div>
-        <!-- </div> -->
       </section>
       <section id="portfolio">
         <h2 class="subtitle">>> First Steps in HTML, CSS, and JS</h2>
@@ -60,24 +60,21 @@
           <a class="my-email" href="mailto:xzhong.dev@gmail.com"> > Email Me: xzhong.dev@gmail.com</a>
         </div>
         <form class="contact-form">
-          <label for="firstname" id="firstname-label"><span>First name</span><br>
-            <input type="text" id="firstname" placeholder="Enter your first name" pattern="[A-Za-z]+" required>
-            <small>Please only enter letters</small>
+          <label for="firstname" id="firstname-label">First name <span>*</span><br>
+            <input type="text" id="firstname" placeholder="Enter your first name" required>
           </label><br><br>
-          <label for="lastname" id="lastname-label"><span>Last name</span><br>
-            <input type="text" id="lastname" placeholder="Enter your last name" pattern="[A-Za-z]+" required>
-            <small>Please only enter letters</small>
+          <label for="lastname" id="lastname-label">Last name <span>*</span><br>
+            <input type="text" id="lastname" placeholder="Enter your last name" required>
           </label><br><br>
-          <label for="email" id="email-label"><span>Email</span><br>
+          <label for="email" id="email-label">Email <span>*</span><br>
             <input type="email" id="email" placeholder="Enter your email" required>
           </label><br><br>
-          <label for="phone" id="phone-label"><span>Phone number</span><br>
-            <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            <small>Format: 123-456-7890</small>
+          <label for="phone" id="phone-label">Phone number<br>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           </label><br><br>
-          <label for="address" id="address-label"><span>Address</span><br>
-            <input type="street" class="form-control" id="autocomplete" placeholder="Street">
-            <input type="city" class="form-control" id="inputCity" placeholder="City"><br><br>  
+          <label for="address" id="address-label">Address<br>
+            <input type="street" id="street" placeholder="Street">
+            <input type="city" id="city" placeholder="City"><br><br>  
             <select id="state" name="state-dropdown">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -131,12 +128,13 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>	
-            <input type="zip" class="form-control" id="inputZip" placeholder="Zip">
+            <input type="zip" id="zip" placeholder="Zip">
           </label><br><br><br>
           <button type="submit" class="form-submit" id="form-submit">Submit</button>   
         </form>
         <div class="form-summary-hidden">
-          <p>Thank you for submitting the form! Below is a summary of the information you entered:</p>
+          <p>Thank you for submitting the form! I'll be in touch soon.</p>
+          <p>Below is a summary of the information you entered:</p>
           <p class="summary-name"></p>
           <p class="summary-email"></p>
           <p class="summary-phone-number"></p>

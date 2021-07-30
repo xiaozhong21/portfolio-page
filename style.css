@@ -27,6 +27,23 @@ body {
   /* background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1057&q=80"); */
   }
 
+/* .header-sticky {
+  position: fixed;
+  height: 95px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  min-width: 50%;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: black;
+  border: rgb(0, 229, 255) dashed 10px;
+  } */
+
 .header-link {
   font-size: 30px;
   text-decoration: none;
@@ -113,7 +130,7 @@ body {
 }
 
 .profile-pic:hover {
-  box-shadow: 0 0 5px 5px purple;
+  box-shadow: 0 0 5px 5px rgb(0, 229, 255);
   cursor: pointer;
 }
 
@@ -202,6 +219,7 @@ body {
 
 .my-contact-info {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .my-email {
@@ -236,6 +254,10 @@ body {
   display: none;
 }
 
+.contact-form span {
+  color: rgb(255, 0, 0);
+}
+
 .form-submit {
   color: white;
   background-color: rgb(5, 58, 70);
@@ -255,6 +277,7 @@ body {
 
 .form-summary {
   display: block;
+  padding-bottom: 40px;
 }
 
 #myBtn {
