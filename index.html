@@ -56,12 +56,17 @@
       </section>
       <section id="contact" class="contact-section">
         <h2 class="contact-header subtitle">>> Let's get in touch!</h2>
+        <div class="my-contact-info">
+          <a class="my-email" href="mailto:xzhong.dev@gmail.com"> > Email Me: xzhong.dev@gmail.com</a>
+        </div>
         <form class="contact-form">
           <label for="firstname" id="firstname-label"><span>First name</span><br>
-            <input type="text" id="firstname" placeholder="Enter your first name" required>
+            <input type="text" id="firstname" placeholder="Enter your first name" pattern="[A-Za-z]+" required>
+            <small>Please only enter letters</small>
           </label><br><br>
           <label for="lastname" id="lastname-label"><span>Last name</span><br>
-            <input type="text" id="lastname" placeholder="Enter your last name" required>
+            <input type="text" id="lastname" placeholder="Enter your last name" pattern="[A-Za-z]+" required>
+            <small>Please only enter letters</small>
           </label><br><br>
           <label for="email" id="email-label"><span>Email</span><br>
             <input type="email" id="email" placeholder="Enter your email" required>
@@ -128,8 +133,15 @@
             </select>	
             <input type="zip" class="form-control" id="inputZip" placeholder="Zip">
           </label><br><br><br>
-          <button type="submit" id="form-submit">Submit</button>   
+          <button type="submit" class="form-submit" id="form-submit">Submit</button>   
         </form>
+        <div class="form-summary-hidden">
+          <p>Thank you for submitting the form! Below is a summary of the information you entered:</p>
+          <p class="summary-name"></p>
+          <p class="summary-email"></p>
+          <p class="summary-phone-number"></p>
+          <p class="summary-address"></p>
+        </div>
       </section>
       <section class="scroll-to-top">
         <button onclick="topFunction()" id="myBtn" title="Go to top">>> Top</button>

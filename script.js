@@ -1,3 +1,19 @@
+////////////////////////////////////////////////
+// Contact form submission
+let submitButton = document.querySelector(".form-submit");
+submitButton.addEventListener("click", function() {
+    if (document.querySelector(".contact-form").checkValidity()) {
+    document.querySelector(".contact-form").className = "contact-form-hidden";
+    document.querySelector(".summary-name").textContent = "Name: " + document.querySelector("#firstname").value + " " + document.querySelector("#lastname").value;
+    document.querySelector(".form-summary-hidden").className = "form-summary";
+    } else {
+        //error message
+        console.log("error!!!")
+    }
+})
+
+
+////////////////////////////////////////////////
 // Go to top button
 //Get the button
 var mybutton = document.getElementById("myBtn");
